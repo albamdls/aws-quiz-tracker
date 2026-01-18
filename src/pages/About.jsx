@@ -88,7 +88,7 @@ export default function AboutPage({ onBack }) {
                 de derechos y deseas solicitar cambios o retirada de contenido, ponte en contacto a
                 través de{" "}
                 <a
-                  href="https://albamora.dev"
+                  href="https://albamdls.github.io/portfolio-albamora/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-emerald-400 hover:text-emerald-300 underline underline-offset-4"
@@ -128,7 +128,7 @@ export default function AboutPage({ onBack }) {
                 Made with <span aria-hidden="true">❤️</span>{" "}
                 <span className="sr-only">love</span> by{" "}
                 <a
-                  href="https://albamora.dev"
+                  href="https://albamdls.github.io/portfolio-albamora/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-semibold text-emerald-400 hover:text-emerald-300 underline underline-offset-4"

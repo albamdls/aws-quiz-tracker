@@ -30,7 +30,7 @@ export default function Footer({ onNavigate }) {
                         <span>by</span>
 
                         <a
-                            href="https://albamora.dev"
+                            href="https://albamdls.github.io/portfolio-albamora/"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="text-slate-300 hover:text-white transition font-medium"
