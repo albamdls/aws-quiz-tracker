@@ -1,9 +1,4 @@
-import DOMAINS from "./domains.json";
-import SERVICE_CATEGORIES from "./serviceCategories.json";
-import QUESTION_BANK from "./questionBank.json";
+import QUESTION_BANK from "./questionBank.js";
+import { EXAMS as GLOBAL_TESTS } from "./globalTests";
 
-export {
-    DOMAINS,
-    SERVICE_CATEGORIES,
-    QUESTION_BANK,
-};
+export { QUESTION_BANK, GLOBAL_TESTS };

@@ -1,34 +1,47 @@
-import { DOMAINS, QUESTION_BANK } from "../data/config";
+import { EXAMS } from "../data/globalTests";
+import { parseQuestionsFromExamHtml } from "./parser";
+import { normalizeQuestions } from "./normalizeQuestions";
+import { QUESTION_BANK } from "../data/questionBank";
 
 const shuffle = (arr) => [...arr].sort(() => Math.random() - 0.5);
 
+function buildFromExam(exam) {
+    let questions = parseQuestionsFromExamHtml(exam.rawHtml);
+    questions = normalizeQuestions(questions);
+    return questions;
+}
+
 const buildQuiz = {
-    global(num = 12) {
-        const questions = [];
+    // =====================
+    // GLOBAL TESTS
+    // =====================
+    globalByExamId(examId) {
+        const exam = EXAMS.find((e) => String(e.id) === String(examId));
+        if (!exam) return [];
 
-        DOMAINS.forEach((domain) => {
-            const count = Math.round(num * domain.weight);
-
-            const qs = shuffle(
-                QUESTION_BANK.filter((q) => q.domain === domain.id)
-            ).slice(0, count);
-
-            questions.push(...qs);
-        });
-
-        return shuffle(questions).slice(0, num);
+        return shuffle(buildFromExam(exam));
     },
 
-    byDomain(id, num = 10) {
-        return shuffle(
-            QUESTION_BANK.filter((q) => q.domain === id)
-        ).slice(0, num);
-    },
+    // =====================
+    // CATEGORY TESTS
+    // =====================
+    byCategories(categoryIds = [], numQuestions = 10) {
+        if (!Array.isArray(categoryIds) || categoryIds.length === 0) {
+            return [];
+        }
 
-    byCategory(id, num = 10) {
-        return shuffle(
-            QUESTION_BANK.filter((q) => q.category === id)
-        ).slice(0, num);
+        // 1️⃣ filtrar por categoría
+        const pool = QUESTION_BANK.filter((q) =>
+            categoryIds.includes(q.category)
+        );
+
+        if (pool.length === 0) return [];
+
+        // 2️⃣ barajar
+        const shuffled = shuffle(pool);
+
+        // 3️⃣ limitar número
+        return shuffled.slice(0, numQuestions);
     },
 };
 

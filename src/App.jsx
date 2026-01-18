@@ -1,21 +1,20 @@
 import { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
 import HomePage from "./pages/Home";
 import SelectPage from "./pages/Select";
 import QuizPage from "./pages/Quiz";
 import ResultsPage from "./pages/Results";
+import AboutPage from "./pages/About";
+import Footer from "./components/Footer";
 
-import buildQuiz from "./utils/buildQuiz";
-import scoring from "./utils/scoring";
 import storage from "./utils/storage";
+import buildQuiz from "./utils/buildQuiz";
+import { calculate } from "./utils/scoring";
+
+import KofiWidget from "./components/KofiWidget";
 
 export default function App() {
-  const [view, setView] = useState("home");
-  const [modality, setModality] = useState(null);
-  const [questions, setQuestions] = useState([]);
-  const [mode, setMode] = useState(null);
-  const [answers, setAnswers] = useState({});
-  const [timer, setTimer] = useState(0);
+  const [page, setPage] = useState("home"); // home | select | quiz | results | about
+
   const [stats, setStats] = useState({
     totalTests: 0,
     totalQuestions: 0,
@@ -25,112 +24,149 @@ export default function App() {
     history: [],
   });
 
-  // ✅ Cargar stats desde "sistema externo" (storage)
+  const [modality, setModality] = useState(null); // global | category
+  const [mode, setMode] = useState(null); // study | exam
+  const [questions, setQuestions] = useState([]);
+  const [answers, setAnswers] = useState({});
+  const [timer, setTimer] = useState(0);
+
+  // ✅ NUEVO: para saber qué global exam se hizo
+  const [selectedExamId, setSelectedExamId] = useState(null);
+
   useEffect(() => {
-    let cancelled = false;
-
-    (async () => {
-      const loadedStats = await storage.getStats();
-      if (!cancelled) setStats(loadedStats);
-    })();
-
-    return () => {
-      cancelled = true;
-    };
+    storage.getStats().then(setStats);
   }, []);
 
-  const handleNavigate = (newView, modalityType = null) => {
-    setView(newView);
-    if (modalityType) setModality(modalityType);
-  };
+  function navigate(nextPage, payload) {
+    if (nextPage === "select") {
+      setModality(payload); // global | category
+      setPage("select");
+      return;
+    }
+    setPage(nextPage);
+  }
 
-  const handleStartQuiz = (modalityType, itemId, quizMode) => {
-    let quizQuestions = [];
+  // onStart(modality, selectedIds, mode, numQuestions)
+  function handleStart(modality, selectedIds, selectedMode, numQuestions) {
+    setMode(selectedMode);
 
-    if (modalityType === "global") {
-      quizQuestions = buildQuiz.global(12);
-    } else if (modalityType === "domain") {
-      quizQuestions = buildQuiz.byDomain(itemId, 10);
-    } else if (modalityType === "category") {
-      quizQuestions = buildQuiz.byCategory(itemId, 10);
+    let qs = [];
+
+    if (modality === "global") {
+      setSelectedExamId(selectedIds);
+      qs = buildQuiz.globalByExamId(selectedIds);
     }
 
-    setQuestions(quizQuestions);
-    setMode(quizMode);
+    if (modality === "category") {
+      setSelectedExamId(null);
+      qs = buildQuiz.byCategories(selectedIds, numQuestions);
+    }
+
+    setQuestions(qs);
     setAnswers({});
     setTimer(0);
-    setView("quiz");
-  };
+    setPage("quiz");
+  }
 
-  const handleFinishQuiz = async (finalAnswers, finalTimer) => {
-    const score = scoring.calculate(questions, finalAnswers);
+  async function handleFinish(finalAnswers, finalTimer) {
+    setAnswers(finalAnswers);
+    setTimer(finalTimer);
 
-    const newStats = {
+    const score = calculate(questions, finalAnswers);
+
+    const nextStats = {
+      ...stats,
       totalTests: stats.totalTests + 1,
       totalQuestions: stats.totalQuestions + questions.length,
       correctAnswers: stats.correctAnswers + score.correct,
-      byDomain: { ...stats.byDomain },
-      byCategory: { ...stats.byCategory },
+      byCategory: mergeAgg(stats.byCategory, score.byCategory),
       history: [
-        ...stats.history,
         {
           date: new Date().toISOString(),
           modality,
           mode,
-          score: score.percentage,
-          questions: questions.length,
+          examId: modality === "global" ? selectedExamId : null,
+          total: questions.length,
+          correct: score.correct,
+          pct: score.percentage,
         },
-      ],
+        ...(stats.history || []),
+      ].slice(0, 50),
     };
 
-    Object.entries(score.byDomain).forEach(([domainId, data]) => {
-      if (!newStats.byDomain[domainId]) {
-        newStats.byDomain[domainId] = { total: 0, correct: 0 };
-      }
-      newStats.byDomain[domainId].total += data.total;
-      newStats.byDomain[domainId].correct += data.correct;
+    setStats(nextStats);
+    await storage.saveStats(nextStats);
+
+    setPage("results");
+  }
+
+  function mergeAgg(prev, add) {
+    const out = { ...(prev || {}) };
+    Object.entries(add || {}).forEach(([k, v]) => {
+      if (!out[k]) out[k] = { total: 0, correct: 0 };
+      out[k].total += v.total || 0;
+      out[k].correct += v.correct || 0;
     });
+    return out;
+  }
 
-    Object.entries(score.byCategory).forEach(([categoryId, data]) => {
-      if (!newStats.byCategory[categoryId]) {
-        newStats.byCategory[categoryId] = { total: 0, correct: 0 };
-      }
-      newStats.byCategory[categoryId].total += data.total;
-      newStats.byCategory[categoryId].correct += data.correct;
-    });
-
-    await storage.saveStats(newStats);
-
-    setStats(newStats);
-    setAnswers(finalAnswers);
-    setTimer(finalTimer);
-    setView("results");
-  };
+  function goHome() {
+    setPage("home");
+    setModality(null);
+    setMode(null);
+    setQuestions([]);
+    setAnswers({});
+    setTimer(0);
+    setSelectedExamId(null);
+  }
 
   return (
-    <div className="min-h-screen bg-linear-to-br from-blue-50 via-purple-50 to-pink-50">
+    <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
+      <KofiWidget />
 
-      <Navbar currentView={view} onNavigate={handleNavigate} />
+      <main className="flex-1">
+        {page === "home" && (
+          <HomePage
+            stats={stats}
+            onNavigate={(next, payload) => {
+              if (next === "select") return navigate("select", payload);
+            }}
+          />
+        )}
 
-      {view === "home" && <HomePage stats={stats} onNavigate={handleNavigate} />}
+        {page === "select" && (
+          <SelectPage
+            modality={modality}
+            stats={stats}
+            onBack={() => setPage("home")}
+            onStart={handleStart}
+          />
+        )}
 
-      {view === "select" && (
-        <SelectPage modality={modality} onBack={() => setView("home")} onStart={handleStartQuiz} />
-      )}
+        {page === "quiz" && (
+          <QuizPage
+            questions={questions}
+            mode={mode}
+            onExit={() => setPage("home")}
+            onFinish={handleFinish}
+          />
+        )}
 
-      {view === "quiz" && (
-        <QuizPage questions={questions} mode={mode} onFinish={handleFinishQuiz} onExit={() => setView("home")} />
-      )}
+        {page === "results" && (
+          <ResultsPage
+            questions={questions}
+            answers={answers}
+            timer={timer}
+            mode={mode}
+            onExit={goHome}
+          />
+        )}
 
-      {view === "results" && (
-        <ResultsPage
-          questions={questions}
-          answers={answers}
-          timer={timer}
-          mode={mode}
-          onExit={() => setView("home")}
-        />
-      )}
+        {page === "about" && <AboutPage onBack={() => setPage("home")} />}
+      </main>
+
+      <Footer onNavigate={(p) => setPage(p)} />
     </div>
   );
+
 }

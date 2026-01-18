@@ -1,85 +1,94 @@
-import { CheckCircle, XCircle } from "lucide-react";
-import { DOMAINS, SERVICE_CATEGORIES } from "../data/config";
-import Pill from "./Pill";
-
 export default function QuestionCard({ question, selectedAnswer, mode, onAnswer }) {
-    const isAnswered = selectedAnswer !== undefined;
-    const isCorrect = selectedAnswer === question.correct;
+    if (!question) return null;
+
+    const isMulti = Boolean(question.multipleAnswers);
+
+    // ✅ Normaliza selectedAnswer a array para multi
+    const selectedArr = Array.isArray(selectedAnswer) ? selectedAnswer : [];
+
+    // ✅ Normaliza correct siempre a array (evita el error .includes)
+    const correctArr = Array.isArray(question.correct) ? question.correct : [question.correct];
+
+    // ✅ En multi: nº de selecciones requeridas = nº de correctas (normalmente 2)
+    const requiredSelections = correctArr.length || 1;
+
+    // ✅ Respondida:
+    // - multi: cuando selecciona tantas como correctas
+    // - single: cuando hay un índice seleccionado
+    const hasAnswered = isMulti
+        ? selectedArr.length >= requiredSelections
+        : selectedAnswer !== undefined && selectedAnswer !== null;
+
+    // ✅ Solo mostramos feedback en modo estudio cuando ya "respondió"
+    const showFeedback = mode === "study" && hasAnswered;
+
+    function toggleOption(index) {
+        // ✅ En estudio: bloquea cambios cuando ya completó el nº requerido (para mostrar feedback)
+        if (mode === "study" && hasAnswered) return;
+
+        // Single
+        if (!isMulti) {
+            onAnswer(index);
+            return;
+        }
+
+        // Multi: deseleccionar
+        if (selectedArr.includes(index)) {
+            onAnswer(selectedArr.filter((i) => i !== index));
+            return;
+        }
+
+        // ✅ Evitar seleccionar más de las necesarias (solo en study)
+        if (mode === "study" && selectedArr.length >= requiredSelections) return;
+
+        onAnswer([...selectedArr, index]);
+    }
 
     return (
-        <div className="bg-white rounded-2xl shadow-lg p-8">
-            <div className="mb-4 flex flex-wrap gap-2">
-                <Pill
-                    label={DOMAINS.find(d => d.id === question.domain)?.name}
-                    color={DOMAINS.find(d => d.id === question.domain)?.color}
-                />
-                <Pill
-                    label={SERVICE_CATEGORIES.find(c => c.id === question.category)?.name}
-                    color={SERVICE_CATEGORIES.find(c => c.id === question.category)?.color}
-                />
-            </div>
-
-            <h3 className="text-xl font-bold text-gray-800 mb-6">{question.question}</h3>
+        <div className="bg-slate-900 border border-slate-800 rounded-2xl shadow-lg p-6">
+            <h2 className="text-xl font-bold text-white mb-6">{question.question}</h2>
 
             <div className="space-y-3">
-                {question.options.map((option, index) => {
-                    const isSelected = selectedAnswer === index;
-                    const showCorrect = mode === 'study' && isAnswered;
-                    const isThisCorrect = index === question.correct;
+                {question.options.map((opt, idx) => {
+                    const isSelected = isMulti ? selectedArr.includes(idx) : selectedAnswer === idx;
 
-                    let className = 'w-full p-4 rounded-xl border-2 text-left transition-all ';
-                    if (showCorrect) {
-                        if (isThisCorrect) {
-                            className += 'border-green-500 bg-green-50';
-                        } else if (isSelected) {
-                            className += 'border-red-500 bg-red-50';
-                        } else {
-                            className += 'border-gray-200 bg-gray-50';
-                        }
+                    // ✅ Usa correctArr (siempre array)
+                    const isCorrect = showFeedback && correctArr.includes(idx);
+                    const isWrong = showFeedback && isSelected && !correctArr.includes(idx);
+
+                    let classes = "p-4 rounded-xl border cursor-pointer transition-all ";
+
+                    if (isCorrect) {
+                        classes += "border-emerald-500 bg-emerald-500/10 text-emerald-300";
+                    } else if (isWrong) {
+                        classes += "border-red-500 bg-red-500/10 text-red-300";
                     } else if (isSelected) {
-                        className += 'border-blue-500 bg-blue-50';
+                        classes += "border-blue-500 bg-blue-500/10 text-blue-300";
                     } else {
-                        className += 'border-gray-300 hover:border-blue-300 hover:bg-blue-50';
+                        classes += "border-slate-700 text-slate-200 hover:border-slate-500";
                     }
 
                     return (
-                        <button
-                            key={index}
-                            onClick={() => onAnswer(index)}
-                            disabled={mode === 'study' && isAnswered}
-                            className={className}
+                        <div
+                            key={idx}
+                            onClick={() => toggleOption(idx)}
+                            className={classes}
+                            role="button"
+                            tabIndex={0}
+                            onKeyDown={(e) => {
+                                if (e.key === "Enter" || e.key === " ") toggleOption(idx);
+                            }}
                         >
-                            <div className="flex items-center gap-3">
-                                <div className={`w-6 h-6 rounded-full border-2 flex items-center justify-center ${showCorrect && isThisCorrect ? 'border-green-500 bg-green-500' :
-                                        showCorrect && isSelected ? 'border-red-500 bg-red-500' :
-                                            isSelected ? 'border-blue-500 bg-blue-500' : 'border-gray-400'
-                                    }`}>
-                                    {showCorrect && isThisCorrect && <CheckCircle className="w-4 h-4 text-white" />}
-                                    {showCorrect && isSelected && !isThisCorrect && <XCircle className="w-4 h-4 text-white" />}
-                                </div>
-                                <span className="font-medium text-gray-800">{option}</span>
-                            </div>
-                        </button>
+                            {opt}
+                        </div>
                     );
                 })}
             </div>
 
-            {mode === 'study' && isAnswered && (
-                <div className={`mt-6 p-4 rounded-xl border-2 ${isCorrect ? 'bg-green-50 border-green-200' : 'bg-red-50 border-red-200'}`}>
-                    <div className="flex items-start gap-3">
-                        {isCorrect ? (
-                            <CheckCircle className="w-6 h-6 text-green-600" />
-                        ) : (
-                            <XCircle className="w-6 h-6 text-red-600" />
-                        )}
-                        <div>
-                            <p className={`font-bold mb-2 ${isCorrect ? 'text-green-800' : 'text-red-800'}`}>
-                                {isCorrect ? '¡Correcto!' : 'Incorrecto'}
-                            </p>
-                            <p className="text-gray-700">{question.explanation}</p>
-                        </div>
-                    </div>
-                </div>
+            {mode === "study" && isMulti && !showFeedback && (
+                <p className="mt-4 text-sm text-slate-400 italic">
+                    Selecciona {requiredSelections} respuestas para ver el feedback.
+                </p>
             )}
         </div>
     );
