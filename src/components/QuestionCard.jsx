@@ -45,27 +45,49 @@ export default function QuestionCard({ question, selectedAnswer, mode, onAnswer 
     }
 
     return (
-        <div className="bg-slate-900 border border-slate-800 rounded-2xl shadow-lg p-6">
-            <h2 className="text-xl font-bold text-white mb-6">{question.question}</h2>
+        <div
+            className="
+        rounded-2xl border shadow-lg
+        p-3 sm:p-6
+        bg-white/70 border-slate-200/70 text-slate-900
+        dark:bg-slate-900/70 dark:border-slate-800 dark:text-slate-100
+        backdrop-blur
+      "
+        >
+            {/* Enunciado más compacto en móvil */}
+            <h2 className="text-base sm:text-xl font-bold text-slate-950 dark:text-white mb-3 sm:mb-6 leading-snug">
+                {question.question}
+            </h2>
 
-            <div className="space-y-3">
+            {/* Opciones más compactas en móvil */}
+            <div className="space-y-2 sm:space-y-3">
                 {question.options.map((opt, idx) => {
                     const isSelected = isMulti ? selectedArr.includes(idx) : selectedAnswer === idx;
 
-                    // ✅ Usa correctArr (siempre array)
                     const isCorrect = showFeedback && correctArr.includes(idx);
                     const isWrong = showFeedback && isSelected && !correctArr.includes(idx);
 
-                    let classes = "p-4 rounded-xl border cursor-pointer transition-all ";
+                    let classes =
+                        "p-3 sm:p-4 rounded-xl border cursor-pointer transition-all outline-none " +
+                        "text-sm sm:text-base leading-snug " +
+                        "focus-visible:ring-2 focus-visible:ring-emerald-400/40 ";
 
                     if (isCorrect) {
-                        classes += "border-emerald-500 bg-emerald-500/10 text-emerald-300";
+                        classes +=
+                            "border-emerald-400/70 bg-emerald-500/10 text-emerald-900 " +
+                            "dark:border-emerald-400/50 dark:bg-emerald-500/15 dark:text-emerald-200";
                     } else if (isWrong) {
-                        classes += "border-red-500 bg-red-500/10 text-red-300";
+                        classes +=
+                            "border-red-400/70 bg-red-500/10 text-red-900 " +
+                            "dark:border-red-400/50 dark:bg-red-500/15 dark:text-red-200";
                     } else if (isSelected) {
-                        classes += "border-blue-500 bg-blue-500/10 text-blue-300";
+                        classes +=
+                            "border-sky-400/70 bg-sky-500/10 text-slate-900 " +
+                            "dark:border-sky-400/50 dark:bg-sky-500/15 dark:text-sky-100";
                     } else {
-                        classes += "border-slate-700 text-slate-200 hover:border-slate-500";
+                        classes +=
+                            "border-slate-200/80 bg-white/60 text-slate-800 hover:border-slate-300 hover:bg-white/80 " +
+                            "dark:border-slate-700 dark:bg-slate-950/30 dark:text-slate-200 dark:hover:border-slate-500 dark:hover:bg-slate-950/45";
                     }
 
                     return (
@@ -75,6 +97,7 @@ export default function QuestionCard({ question, selectedAnswer, mode, onAnswer 
                             className={classes}
                             role="button"
                             tabIndex={0}
+                            aria-pressed={isSelected}
                             onKeyDown={(e) => {
                                 if (e.key === "Enter" || e.key === " ") toggleOption(idx);
                             }}
@@ -85,8 +108,9 @@ export default function QuestionCard({ question, selectedAnswer, mode, onAnswer 
                 })}
             </div>
 
+            {/* Hint multi: más pequeño en móvil */}
             {mode === "study" && isMulti && !showFeedback && (
-                <p className="mt-4 text-sm text-slate-400 italic">
+                <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-slate-600 dark:text-slate-400 italic">
                     Selecciona {requiredSelections} respuestas para ver el feedback.
                 </p>
             )}

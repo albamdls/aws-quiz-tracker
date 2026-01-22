@@ -1,7 +1,7 @@
 export default [
   {
     id: 2,
-    title: "Practice Exam 2",
+    title: "Exam 2",
     questions: 50,
     rawHtml: `
         <ol>

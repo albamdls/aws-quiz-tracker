@@ -1,7 +1,7 @@
 export default [
   {
     id: 1,
-    title: "Practice Exam 1",
+    title: "Exam 1",
     questions: 50, // luego se reemplaza por exam.data.length
     rawHtml: `
             <ol>

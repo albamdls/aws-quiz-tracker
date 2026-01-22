@@ -7,7 +7,13 @@ const defaultStats = {
     byDomain: {},
     byCategory: {},
     history: [],
+    failed: {
+        global: [],
+        service: [],
+        byCategory: {},
+    },
 };
+
 
 const storage = {
     async getStats() {

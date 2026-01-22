@@ -1,6 +1,6 @@
 // src/utils/parser.js
 
-export function parseQuestionsFromExamHtml(olHtml) {
+export function parseQuestionsFromExamHtml(olHtml, { examId = "unknown" } = {}) {
     if (!olHtml || !olHtml.trim()) return [];
 
     // ✅ NUEVO: recorta todo lo que haya después del primer </ol>
@@ -36,7 +36,8 @@ export function parseQuestionsFromExamHtml(olHtml) {
         if (options.length < 2 || correctIdx.length < 1) continue;
 
         questions.push({
-            id: `q_${questions.length + 1}`, // ✅ id estable
+            id: `global_${examId}_${questions.length}`, // 0..49 (estable y único)
+            examId,
             question: questionText,
             options,
             correct: correctIdx,
