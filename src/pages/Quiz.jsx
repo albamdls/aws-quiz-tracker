@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
-import { Clock } from "lucide-react";
+import { Clock, Flag } from "lucide-react";
 import QuestionCard from "../components/QuestionCard";
-import { isCorrectAnswer, isAnswered } from "../utils/scoring";
+import { isCorrectAnswer } from "../utils/scoring";
 import formatTime from "../utils/time";
 
 function isAnsweredValue(v) {
@@ -20,6 +20,9 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
     const [timer, setTimer] = useState(0);
     const [running, setRunning] = useState(mode === "exam");
 
+    // ✅ NUEVO: flags (banderas) por pregunta
+    const [flags, setFlags] = useState(() => ({})); // { [questionId]: true }
+
     useEffect(() => {
         let interval;
         if (running) interval = setInterval(() => setTimer((t) => t + 1), 1000);
@@ -28,20 +31,52 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
 
     const currentQ = questions?.[current];
 
+    // Helpers flags
+    const isFlagged = (id) => !!flags[id];
+
+    const toggleFlag = (id) => {
+        setFlags((prev) => ({ ...prev, [id]: !prev[id] }));
+    };
+
+    const flaggedCount = useMemo(() => {
+        if (!Array.isArray(questions)) return 0;
+        return questions.reduce((acc, q) => acc + (flags[q.id] ? 1 : 0), 0);
+    }, [questions, flags]);
+
     const answeredCount = useMemo(() => {
         if (!Array.isArray(questions)) return 0;
-        return questions.reduce((acc, q) => acc + (isAnsweredValue(answers[q.id]) ? 1 : 0), 0);
+        return questions.reduce(
+            (acc, q) => acc + (isAnsweredValue(answers[q.id]) ? 1 : 0),
+            0
+        );
     }, [questions, answers]);
 
-    const allAnswered = Array.isArray(questions) && answeredCount === questions.length;
+    const allAnswered =
+        Array.isArray(questions) && answeredCount === questions.length;
+
+    const goToNextFlagged = () => {
+        if (!Array.isArray(questions) || questions.length === 0) return;
+        const n = questions.length;
+        for (let step = 1; step <= n; step++) {
+            const idx = (current + step) % n;
+            const q = questions[idx];
+            if (q?.id != null && isFlagged(q.id)) {
+                setCurrent(idx);
+                return;
+            }
+        }
+    };
 
     if (!Array.isArray(questions) || questions.length === 0 || !currentQ) {
         return (
             <div className="max-w-4xl mx-auto px-4 py-10">
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-8 text-center">
-                    <p className="text-xl font-semibold text-white mb-2">No hay preguntas para mostrar</p>
+                    <p className="text-xl font-semibold text-white mb-2">
+                        No hay preguntas para mostrar
+                    </p>
                     <p className="text-slate-300 mb-6">
-                        Parece que el test no devolvió preguntas (JSON vacío o mal formateado).
+                        Parece que el test no devolvió preguntas (JSON vacío o mal
+                        formateado).
                     </p>
                     <button
                         onClick={onExit}
@@ -64,25 +99,68 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                     <div className="bg-slate-900/70 backdrop-blur border border-slate-800 rounded-2xl shadow-lg p-6 mb-6">
                         <div className="flex justify-between items-center gap-4">
                             <div className="flex items-center gap-4">
-                                <button onClick={onExit} className="text-slate-300 hover:text-white">
+                                <button
+                                    onClick={onExit}
+                                    className="text-slate-300 hover:text-white"
+                                >
                                     ← Salir
                                 </button>
+
                                 <span className="text-sm font-semibold text-slate-300">
                                     Pregunta {current + 1} de {questions.length}
                                 </span>
 
                                 {/* contador respondidas */}
                                 <span className="text-xs px-3 py-1 rounded-full border border-white/10 bg-slate-950 text-slate-200">
-                                    Respondidas: <span className="text-white font-semibold">{answeredCount}</span>/{questions.length}
+                                    Respondidas:{" "}
+                                    <span className="text-white font-semibold">
+                                        {answeredCount}
+                                    </span>
+                                    /{questions.length}
+                                </span>
+
+                                {/* contador marcadas */}
+                                <span className="text-xs px-3 py-1 rounded-full border border-white/10 bg-slate-950 text-slate-200">
+                                    Marcadas:{" "}
+                                    <span className="text-white font-semibold">
+                                        {flaggedCount}
+                                    </span>
                                 </span>
                             </div>
 
-                            {mode === "exam" && (
-                                <div className="flex items-center gap-2 text-red-300 font-semibold">
-                                    <Clock className="w-5 h-5" />
-                                    {formatTime(timer)}
-                                </div>
-                            )}
+                            <div className="flex items-center gap-3">
+                                {mode === "exam" && (
+                                    <div className="flex items-center gap-2 text-red-300 font-semibold">
+                                        <Clock className="w-5 h-5" />
+                                        {formatTime(timer)}
+                                    </div>
+                                )}
+
+                                {/* ✅ Botón bandera */}
+                                <button
+                                    onClick={() => toggleFlag(currentQ.id)}
+                                    className="
+                    inline-flex items-center gap-2 px-3 py-2 rounded-xl
+                    bg-slate-950 border border-slate-700
+                    text-slate-200 hover:text-white hover:border-slate-500 transition
+                  "
+                                    title={
+                                        isFlagged(currentQ.id)
+                                            ? "Quitar bandera"
+                                            : "Marcar para revisar"
+                                    }
+                                >
+                                    <Flag
+                                        className={`w-5 h-5 ${isFlagged(currentQ.id)
+                                            ? "text-amber-300"
+                                            : "text-slate-400"
+                                            }`}
+                                    />
+                                    <span className="text-sm font-medium">
+                                        {isFlagged(currentQ.id) ? "Marcada" : "Marcar"}
+                                    </span>
+                                </button>
+                            </div>
                         </div>
 
                         {/* Progress bar */}
@@ -121,7 +199,8 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                             <button
                                 onClick={() => {
                                     setRunning(false);
-                                    onFinish(answers, timer);
+                                    // ✅ Opcional: pasamos también flags al finish
+                                    onFinish(answers, timer, flags);
                                 }}
                                 disabled={mode === "exam" && !allAnswered}
                                 className="
@@ -133,7 +212,11 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                   shadow-lg shadow-cyan-500/10 hover:shadow-cyan-400/20
                   transition-all
                 "
-                                title={mode === "exam" && !allAnswered ? "Te faltan preguntas por responder" : "Finalizar"}
+                                title={
+                                    mode === "exam" && !allAnswered
+                                        ? "Te faltan preguntas por responder"
+                                        : "Finalizar"
+                                }
                             >
                                 Finalizar
                             </button>
@@ -186,6 +269,12 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                                 <span className="w-3 h-3 rounded bg-blue-500/70 border border-blue-500/70" />
                                 Actual
                             </span>
+
+                            {/* ✅ Leyenda bandera */}
+                            <span className="flex items-center gap-2">
+                                <span className="w-3 h-3 rounded bg-amber-400 border border-amber-300" />
+                                Marcada
+                            </span>
                         </div>
 
                         {/* Grid botones */}
@@ -193,12 +282,13 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                             {questions.map((q, idx) => {
                                 const answered = isAnsweredValue(answers[q.id]);
                                 const isCurrent = idx === current;
+                                const flagged = isFlagged(q.id);
 
-                                // 👉 AQUÍ está la clave
+                                // en study: correcta/incorrecta según respuesta
                                 const ok = answered ? isCorrectAnswer(q, answers[q.id]) : false;
 
                                 const base =
-                                    "w-full aspect-square rounded-lg text-sm font-semibold transition select-none";
+                                    "relative w-full aspect-square rounded-lg text-sm font-semibold transition select-none";
 
                                 const style = isCurrent
                                     ? "bg-blue-500/20 border border-blue-500/70 text-white"
@@ -226,10 +316,20 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                                         }
                                     >
                                         {idx + 1}
+
+                                        {/* ✅ Indicador bandera */}
+                                        {flagged && (
+                                            <span
+                                                className="
+                          absolute top-1 right-1 w-2.5 h-2.5 rounded-full
+                          bg-amber-400 shadow-sm
+                        "
+                                                title="Marcada"
+                                            />
+                                        )}
                                     </button>
                                 );
                             })}
-
                         </div>
 
                         {/* Acciones rápidas */}
@@ -237,7 +337,9 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                             <button
                                 onClick={() => {
                                     // ir a la primera en blanco
-                                    const i = questions.findIndex((q) => !isAnsweredValue(answers[q.id]));
+                                    const i = questions.findIndex(
+                                        (q) => !isAnsweredValue(answers[q.id])
+                                    );
                                     if (i >= 0) setCurrent(i);
                                 }}
                                 className="
@@ -248,11 +350,41 @@ export default function QuizPage({ questions, mode, onFinish, onExit }) {
                             >
                                 Ir a pendientes
                             </button>
+
+                            <button
+                                onClick={() => {
+                                    const i = questions.findIndex((q) => isFlagged(q.id));
+                                    if (i >= 0) setCurrent(i);
+                                }}
+                                disabled={flaggedCount === 0}
+                                className="
+                  flex-1 py-2 rounded-xl text-sm font-medium
+                  bg-slate-950 border border-slate-700 text-slate-200
+                  hover:border-slate-500 hover:text-white transition
+                  disabled:opacity-40
+                "
+                            >
+                                Ir a marcadas
+                            </button>
+                        </div>
+
+                        <div className="mt-2">
+                            <button
+                                onClick={goToNextFlagged}
+                                disabled={flaggedCount === 0}
+                                className="
+                  w-full py-2 rounded-xl text-sm font-medium
+                  bg-slate-950 border border-slate-700 text-slate-200
+                  hover:border-slate-500 hover:text-white transition
+                  disabled:opacity-40
+                "
+                            >
+                                Siguiente marcada
+                            </button>
                         </div>
                     </div>
 
-                    {/* En móvil, el sidebar ya cae debajo, pero queda bien.
-              Si lo quieres sticky también en móvil, lo hacemos tipo barra horizontal. */}
+                    {/* En móvil, el sidebar cae debajo. */}
                 </aside>
             </div>
         </div>

@@ -1,20 +1,56 @@
-import { Home, Trophy } from "lucide-react";
+import { Sun, Moon, Home } from "lucide-react";
+import useTheme from "../hooks/useTheme";
 
-export default function Navbar({ currentView, onNavigate }) {
+export default function Navbar({ onNavigate }) {
+    const { theme, toggleTheme } = useTheme();
+
     return (
-        <nav className="bg-white shadow-sm border-b">
-            <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
-                <div className="flex items-center gap-3">
-                    <div className="p-2 bg-linear-to-r from-blue-600 to-purple-600 rounded-lg">
-                        <Trophy className="w-6 h-6 text-white" />
-                    </div>
-                    <span className="text-xl font-bold text-gray-800">AWS Practice</span>
+        <nav className="
+      sticky top-0 z-50
+      border-b border-slate-800
+      bg-slate-950/80 backdrop-blur
+    ">
+            <div className="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
+
+                {/* LEFT · Home */}
+                <button
+                    onClick={() => onNavigate("home")}
+                    className="flex items-center gap-2 text-slate-300 hover:text-white transition"
+                >
+                    <Home className="w-5 h-5" />
+                    <span className="hidden sm:inline text-sm font-medium">
+                        Inicio
+                    </span>
+                </button>
+
+                {/* CENTER · Brand */}
+                <div className="text-sm text-slate-400 font-medium">
+                    AWS Quiz Tracker ·{" "}
+                    <span className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                        jalando.code
+                    </span>
                 </div>
-                {currentView !== 'home' && (
-                    <button onClick={() => onNavigate('home')} className="flex items-center gap-2 text-gray-600 hover:text-gray-800">
-                        <Home className="w-5 h-5" /> Inicio
-                    </button>
-                )}
+
+                {/* RIGHT · Theme toggle */}
+                <button
+                    onClick={toggleTheme}
+                    className="
+            p-2 rounded-xl
+            border border-slate-700
+            bg-slate-900/60
+            text-slate-300 hover:text-white
+            hover:border-slate-500
+            transition
+          "
+                    aria-label="Toggle theme"
+                >
+                    {theme === "dark" ? (
+                        <Sun className="w-5 h-5" />
+                    ) : (
+                        <Moon className="w-5 h-5" />
+                    )}
+                </button>
+
             </div>
         </nav>
     );

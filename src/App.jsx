@@ -5,6 +5,8 @@ import QuizPage from "./pages/Quiz";
 import ResultsPage from "./pages/Results";
 import AboutPage from "./pages/About";
 import Footer from "./components/Footer";
+import LandingPage from "./pages/Landing";
+// import Navbar from "./components/Navbar";
 
 import storage from "./utils/storage";
 import buildQuiz from "./utils/buildQuiz";
@@ -13,7 +15,7 @@ import { calculate } from "./utils/scoring";
 import KofiWidget from "./components/KofiWidget";
 
 export default function App() {
-  const [page, setPage] = useState("home"); // home | select | quiz | results | about
+  const [page, setPage] = useState("landing"); // landing | home | select | quiz | results | about | map
 
   const [stats, setStats] = useState({
     totalTests: 0,
@@ -124,7 +126,14 @@ export default function App() {
     <div className="min-h-screen bg-slate-950 text-slate-100 flex flex-col">
       <KofiWidget />
 
+      {/* <Navbar onNavigate={(p) => setPage(p)} /> */}
+
       <main className="flex-1">
+
+        {page === "landing" && (
+          <LandingPage onGoDashboard={() => setPage("home")} />
+        )}
+
         {page === "home" && (
           <HomePage
             stats={stats}
@@ -133,6 +142,8 @@ export default function App() {
             }}
           />
         )}
+
+        {page === "map" && <MapPage />}
 
         {page === "select" && (
           <SelectPage
