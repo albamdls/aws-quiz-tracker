@@ -65,10 +65,15 @@ function getDirectText(li) {
 }
 
 function extractCorrectLetters(text) {
-    const m = text.match(/correct\s*answer\s*:\s*([A-H](?:\s*,\s*[A-H])*)/i);
+    // Captura lo que venga después de "Correct answer:"
+    const m = text.match(/correct\s*answer\s*:\s*([A-H,\s]+)/i);
     if (!m) return [];
-    return m[1].split(",").map(s => s.trim().toUpperCase()).filter(Boolean);
+
+    // Saca todas las letras A-H (sirve para "B, E", "BE", "B E", "B,E", "BC", etc.)
+    return (m[1].match(/[A-H]/gi) || [])
+        .map((x) => x.toUpperCase());
 }
+
 
 function letterToIndex(letter) {
     const map = { A: 0, B: 1, C: 2, D: 3, E: 4, F: 5, G: 6, H: 7 };
