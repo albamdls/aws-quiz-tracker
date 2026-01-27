@@ -10581,7 +10581,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which of the following are benefits of the AWS Cloud? (Choose two.)
+  <li>Which of the following are benefits of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-36" value="A">A. Unlimited uptime</li>
       <li><input type="checkbox" name="question-36" value="B">B. Elasticity</li>
@@ -10658,7 +10658,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which of the following benefits does the AWS Compliance program provide to AWS customers? (Choose two.)
+  <li>Which of the following benefits does the AWS Compliance program provide to AWS customers? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. It verifies that hosted workloads are automatically compliant with the controls of supported compliance frameworks.</li>
       <li><input type="checkbox" name="question-39" value="B">B. AWS is responsible for the maintenance of common compliance framework documentation.</li>
@@ -10719,7 +10719,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>When comparing AWS Cloud with on-premises Total Cost of Ownership, which expenses must be considered? (Choose two.)
+  <li>When comparing AWS Cloud with on-premises Total Cost of Ownership, which expenses must be considered? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-42" value="A">A. Software development</li>
       <li><input type="checkbox" name="question-42" value="B">B. Project management</li>
@@ -10737,7 +10737,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Under the shared responsibility model, which of the following tasks are the responsibility of the customer? (Choose two.)
+  <li>Under the shared responsibility model, which of the following tasks are the responsibility of the customer? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-43" value="A">A. Maintaining the underlying Amazon EC2 hardware.</li>
       <li><input type="checkbox" name="question-43" value="B">B. Managing the VPC network access control lists.</li>
@@ -10763,7 +10763,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which scenarios represent the concept of elasticity on AWS? (Choose two.)
+  <li>Which scenarios represent the concept of elasticity on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-44" value="A">A. Scaling the number of Amazon EC2 instances based on traffic.</li>
       <li><input type="checkbox" name="question-44" value="B">B. Resizing Amazon RDS instances as business needs change.</li>
@@ -10809,7 +10809,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>A company is considering moving its on-premises data center to AWS. What factors should be included in doing a Total Cost of Ownership (TCO) analysis? (Choose two.)
+  <li>A company is considering moving its on-premises data center to AWS. What factors should be included in doing a Total Cost of Ownership (TCO) analysis? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-46" value="A">A. Amazon EC2 instance availability</li>
       <li><input type="checkbox" name="question-46" value="B">B. Power consumption of the data center</li>
@@ -11089,7 +11089,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which methods can be used to identify AWS costs by departments? (Choose two.)
+  <li>Which methods can be used to identify AWS costs by departments? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-8" value="A">A. Enable multi-factor authentication for the AWS account root user.</li>
       <li><input type="checkbox" name="question-8" value="B">B. Create separate accounts for each department.</li>
@@ -11187,7 +11187,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, customers are responsible for which aspects of security in the cloud? (Choose two.)
+  <li>Under the AWS shared responsibility model, customers are responsible for which aspects of security in the cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Visualization management</li>
       <li><input type="checkbox" name="question-12" value="B">B. Hardware management</li>
@@ -11367,7 +11367,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>How can a customer increase security to AWS account logons? (Choose two.)
+  <li>How can a customer increase security to AWS account logons? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-20" value="A">A. Configure AWS Certificate Manager</li>
       <li><input type="checkbox" name="question-20" value="B">B. Enable Multi-Factor Authentication (MFA)</li>
@@ -11737,7 +11737,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which of the following BEST describe the AWS pricing model? (Choose two.)
+  <li>Which of the following BEST describe the AWS pricing model? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-37" value="A">A. Fixed-term</li>
       <li><input type="checkbox" name="question-37" value="B">B. Pay-as-you-go</li>
@@ -11755,7 +11755,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose two.)
+  <li>Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. Public load balancers with AWS Application Auto Scaling capabilities</li>
       <li><input type="checkbox" name="question-38" value="B">B. F5 Big-IP and Citrix NetScaler load balancers</li>
@@ -11976,7 +11976,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose two.)
+  <li>Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. AWS WAF</li>
       <li><input type="checkbox" name="question-48" value="B">B. Amazon DynamoDB</li>
@@ -12226,7 +12226,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which services manage and automate application deployments on AWS? (Choose two.)
+  <li>Which services manage and automate application deployments on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-10" value="A">A. AWS Elastic Beanstalk</li>
       <li><input type="checkbox" name="question-10" value="B">B. AWS CodeCommit</li>
@@ -12271,7 +12271,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which principles are used to architect applications for reliability on the AWS Cloud? (Choose two.)
+  <li>Which principles are used to architect applications for reliability on the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Design for automated failure recovery</li>
       <li><input type="checkbox" name="question-12" value="B">B. Use multiple Availability Zones</li>
@@ -12289,7 +12289,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>What tasks should a customer perform when that customer suspects an AWS account has been compromised? (Choose two.)
+  <li>What tasks should a customer perform when that customer suspects an AWS account has been compromised? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-13" value="A">A. Rotate passwords and access keys.</li>
       <li><input type="checkbox" name="question-13" value="B">B. Remove MFA tokens.</li>
@@ -12395,7 +12395,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>What are the advantages of Reserved Instances? (Choose two.)
+  <li>What are the advantages of Reserved Instances? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-18" value="A">A. They provide a discount over on-demand pricing.</li>
       <li><input type="checkbox" name="question-18" value="B">B. They provide access to additional instance types.</li>
@@ -12475,7 +12475,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which of the following AWS services provide compute resources? (Choose two.)
+  <li>Which of the following AWS services provide compute resources? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-22" value="A">A. AWS Lambda</li>
       <li><input type="checkbox" name="question-22" value="B">B. Amazon Elastic Container Service (Amazon ECS)</li>
@@ -12517,7 +12517,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Choose two.)
+  <li>Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-24" value="A">A. Amazon EBS</li>
       <li><input type="checkbox" name="question-24" value="B">B. AWS Direct Connect</li>
@@ -12560,7 +12560,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which services use AWS edge locations? (Choose two.)
+  <li>Which services use AWS edge locations? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. Amazon CloudFront</li>
       <li><input type="checkbox" name="question-26" value="B">B. AWS Shield</li>
@@ -12619,7 +12619,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>What is the value of using third-party software from AWS Marketplace instead of installing third-party software on Amazon EC2? (Choose two.)
+  <li>What is the value of using third-party software from AWS Marketplace instead of installing third-party software on Amazon EC2? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. Users pay for software by the hour or month depending on licensing.</li>
       <li><input type="checkbox" name="question-29" value="B">B. AWS Marketplace enables the user to launch applications with 1-Click.</li>
@@ -12657,7 +12657,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Under the shared responsibility model; which of the following areas are the customer’s responsibility? (Choose two.)
+  <li>Under the shared responsibility model; which of the following areas are the customer’s responsibility? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-31" value="A">A. Firmware upgrades of network infrastructure</li>
       <li><input type="checkbox" name="question-31" value="B">B. Patching of operating systems</li>
@@ -12794,7 +12794,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which of the following are benefits of hosting infrastructure in the AWS Cloud? (Choose two.)
+  <li>Which of the following are benefits of hosting infrastructure in the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. There are no upfront commitments.</li>
       <li><input type="checkbox" name="question-38" value="B">B. AWS manages all security in the cloud.</li>
@@ -12903,7 +12903,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Choose two.)
+  <li>What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-43" value="A">A. Companies can deploy applications in multiple AWS Regions to reduce latency.</li>
       <li><input type="checkbox" name="question-43" value="B">B. Amazon Translate automatically translates third-party website interfaces into multiple languages.</li>
@@ -13076,7 +13076,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are pillars of the AWS Well-Architected Framework? (Choose two.)
+  <li>Which of the following are pillars of the AWS Well-Architected Framework? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Multiple Availability Zones</li>
       <li><input type="checkbox" name="question-2" value="B">B. Performance efficiency</li>
@@ -13145,7 +13145,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br> What combination of actions will enable the company to accomplish this goal? (Choose two.)
+  <li>A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br> What combination of actions will enable the company to accomplish this goal? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Use the AWS Service Catalog to identify a list of on-premises resources that can be migrated.</li>
       <li><input type="checkbox" name="question-6" value="B">B. Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC.</li>
@@ -13307,7 +13307,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What are the benefits of developing and running a new application in the AWS Cloud compared to on-premises? (Choose two.)
+  <li>What are the benefits of developing and running a new application in the AWS Cloud compared to on-premises? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-14" value="A">A. AWS automatically distributes the data globally for higher durability.</li>
       <li><input type="checkbox" name="question-14" value="B">B. AWS will take care of operating the application.</li>
@@ -13412,7 +13412,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What are the immediate benefits of using the AWS Cloud? (Choose two.)
+  <li>What are the immediate benefits of using the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Increased IT staff.</li>
       <li><input type="checkbox" name="question-19" value="B">B. Capital expenses are replaced with variable expenses.</li>
@@ -13590,7 +13590,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Choose two.)
+  <li>How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-28" value="A">A. By the time it takes for the Lambda function to execute.</li>
       <li><input type="checkbox" name="question-28" value="B">B. By the number of versions of a specific Lambda function.</li>
@@ -13608,7 +13608,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following describes the relationships among AWS Regions, Availability Zones, and edge locations? (Choose two.)
+  <li>Which of the following describes the relationships among AWS Regions, Availability Zones, and edge locations? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. There are more AWS Regions than Availability Zones.</li>
       <li><input type="checkbox" name="question-29" value="B">B. There are more edge locations than AWS Regions.</li>
@@ -13663,7 +13663,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What does AWS Marketplace allow users to do? (Choose two.)
+  <li>What does AWS Marketplace allow users to do? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-32" value="A">A. Sell unused Amazon EC2 Spot Instances.</li>
       <li><input type="checkbox" name="question-32" value="B">B. Sell solutions to other AWS users.</li>
@@ -13754,7 +13754,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What are the advantages of the AWS Cloud? (Choose two.)
+  <li>What are the advantages of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-37" value="A">A. Fixed rate monthly cost</li>
       <li><input type="checkbox" name="question-37" value="B">B. No need to guess capacity requirements</li>
@@ -13772,7 +13772,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>When comparing the total cost of ownership (TCO) of an on-premises infrastructure to a cloud architecture, what costs should be considered? (Choose two.)
+  <li>When comparing the total cost of ownership (TCO) of an on-premises infrastructure to a cloud architecture, what costs should be considered? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. The credit card processing fees for application transactions in the cloud.</li>
       <li><input type="checkbox" name="question-38" value="B">B. The cost of purchasing and installing server hardware in the on-premises data.</li>
@@ -14162,7 +14162,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>When designing a typical three-tier web application, which AWS services and/or features improve availability and reduce the impact failures? (Choose two.)
+  <li>When designing a typical three-tier web application, which AWS services and/or features improve availability and reduce the impact failures? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-9" value="A">A. AWS Auto Scaling for Amazon EC2 instances</li>
       <li><input type="checkbox" name="question-9" value="B">B. Amazon VPC subnet ACLs to check the health of a service</li>
@@ -14203,7 +14203,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are recommended practices for managing IAM users? (Choose two.)
+  <li>Which of the following are recommended practices for managing IAM users? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-11" value="A">A. Require IAM users to change their passwords after a specified period of time</li>
       <li><input type="checkbox" name="question-11" value="B">B. Prevent IAM users from reusing previous passwords</li>
@@ -14221,7 +14221,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br> How can the company get this support? (Choose two.)
+  <li>A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br> How can the company get this support? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Ask for a quote from the AWS Marketplace team to perform a migration into the company’s AWS account.</li>
       <li><input type="checkbox" name="question-12" value="B">B. Contact AWS Support and open a case for assistance</li>
@@ -14340,7 +14340,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)
+  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Application Load Balancer</li>
       <li><input type="checkbox" name="question-19" value="B">B. AWS Global Accelerator</li>
@@ -14375,7 +14375,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are components of Amazon VPC? (Choose two.)
+  <li>Which of the following are components of Amazon VPC? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-21" value="A">A. Objects</li>
       <li><input type="checkbox" name="question-21" value="B">B. Subnets</li>
@@ -14410,7 +14410,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following will enhance the security of access to the AWS Management Console? (Choose two.)
+  <li>Which of the following will enhance the security of access to the AWS Management Console? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-23" value="A">A. AWS Secrets Manager</li>
       <li><input type="checkbox" name="question-23" value="B">B. AWS Certificate Manager</li>
@@ -14428,7 +14428,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>The AWS Trusted Advisor checks include recommendations regarding which of the following? (Choose two.)
+  <li>The AWS Trusted Advisor checks include recommendations regarding which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-24" value="A">A. Information on Amazon S3 bucket permissions</li>
       <li><input type="checkbox" name="question-24" value="B">B. AWS service outages</li>
@@ -14463,7 +14463,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Choose two.)
+  <li>How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. It identifies software vulnerabilities in applications running on AWS</li>
       <li><input type="checkbox" name="question-26" value="B">B. It provides a list of cost optimization recommendations based on current AWS usage</li>
@@ -14479,7 +14479,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are advantages of the AWS Cloud? (Choose two.)
+  <li>Which of the following are advantages of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. AWS manages the maintenance of the cloud infrastructure</li>
       <li><input type="checkbox" name="question-27" value="B">B. AWS manages the security of applications built on AWS</li>
@@ -14515,7 +14515,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services provide a user with connectivity between the AWS Cloud and on-premises resources? (Choose two.)
+  <li>Which AWS services provide a user with connectivity between the AWS Cloud and on-premises resources? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. AWS VPN</li>
       <li><input type="checkbox" name="question-29" value="B">B. Amazon Connect</li>
@@ -14688,7 +14688,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS service will provide a way to generate encryption keys that can be used to encrypt data? (Choose two.)
+  <li>Which AWS service will provide a way to generate encryption keys that can be used to encrypt data? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. Amazon Macie</li>
       <li><input type="checkbox" name="question-38" value="B">B. AWS Certificate Manager</li>
@@ -14728,7 +14728,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What can assist in evaluating an application for migration to the cloud? (Choose two.)
+  <li>What can assist in evaluating an application for migration to the cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-40" value="A">A. AWS Trusted Advisor</li>
       <li><input type="checkbox" name="question-40" value="B">B. AWS Professional Services</li>
@@ -14769,7 +14769,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, the customer manages which of the following? (Choose two.)
+  <li>Under the AWS shared responsibility model, the customer manages which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-42" value="A">A. Decommissioning of physical storage devices</li>
       <li><input type="checkbox" name="question-42" value="B">B. Security group and ACL configuration</li>
@@ -14879,7 +14879,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which features or services can be used to monitor costs and expenses for an AWS account? (Choose two.)
+  <li>Which features or services can be used to monitor costs and expenses for an AWS account? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. AWS Cost and Usage report</li>
       <li><input type="checkbox" name="question-48" value="B">B. AWS product pages</li>
@@ -15019,7 +15019,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which actions represent best practices for using AWS IAM? (Choose two.)
+  <li>Which actions represent best practices for using AWS IAM? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Configure a strong password policy</li>
       <li><input type="checkbox" name="question-6" value="B">B. Share the security credentials among users of AWS accounts who are in the same Region</li>
@@ -15078,7 +15078,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>According to the AWS Well-Architected Framework, what change management steps should be taken to achieve reliability in the AWS Cloud? (Choose two.)
+  <li>According to the AWS Well-Architected Framework, what change management steps should be taken to achieve reliability in the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-9" value="A">A. Use AWS Config to generate an inventory of AWS resources</li>
       <li><input type="checkbox" name="question-9" value="B">B. Use service limits to prevent users from creating or making changes to AWS resources</li>
@@ -15128,7 +15128,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services can be used to move data from on-premises data centers to AWS? (Choose two.)
+  <li>Which AWS services can be used to move data from on-premises data centers to AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. AWS Snowball</li>
       <li><input type="checkbox" name="question-12" value="B">B. AWS Lambda</li>
@@ -15320,7 +15320,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which tasks are the customer’s responsibility in the AWS shared responsibility model? (Choose two.)
+  <li>Which tasks are the customer’s responsibility in the AWS shared responsibility model? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-23" value="A">A. Infrastructure facilities access management</li>
       <li><input type="checkbox" name="question-23" value="B">B. Cloud infrastructure hardware lifecycle management</li>
@@ -15355,7 +15355,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Choose two.)
+  <li>Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-25" value="A">A. AWS WAF</li>
       <li><input type="checkbox" name="question-25" value="B">B. AWS Trusted Advisor</li>
@@ -15394,7 +15394,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br> Which security measures fall under the responsibility of AWS? (Choose two.)
+  <li>A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br> Which security measures fall under the responsibility of AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. Running a virus scan on EC2 instances</li>
       <li><input type="checkbox" name="question-27" value="B">B. Protecting against IP spoofing and packet sniffing</li>
@@ -15510,7 +15510,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services may be scaled using AWS Auto Scaling? (Choose two.)
+  <li>Which AWS services may be scaled using AWS Auto Scaling? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-34" value="A">A. Amazon EC2</li>
       <li><input type="checkbox" name="question-34" value="B">B. Amazon DynamoDB</li>
@@ -15528,7 +15528,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are benefits of AWS Global Accelerator? (Choose two.)
+  <li>Which of the following are benefits of AWS Global Accelerator? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-35" value="A">A. Reduced cost to run services on AWS</li>
       <li><input type="checkbox" name="question-35" value="B">B. Improved availability of applications deployed on AWS</li>
@@ -15619,7 +15619,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>The AWS Cost Management tools give users the ability to do which of the following? (Choose two.)
+  <li>The AWS Cost Management tools give users the ability to do which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-40" value="A">A. Terminate all AWS resources automatically if budget thresholds are exceeded.</li>
       <li><input type="checkbox" name="question-40" value="B">B. Break down AWS costs by day, service, and linked AWS account.</li>
@@ -15838,7 +15838,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which features and benefits does the AWS Organizations service provide? (Choose two.)
+  <li>Which features and benefits does the AWS Organizations service provide? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Establishing real-time communications between members of an internal team</li>
       <li><input type="checkbox" name="question-2" value="B">B. Facilitating the use of NoSQL databases</li>
@@ -15907,7 +15907,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services can be used to provide network connectivity between an on-premises network and a VPC? (Choose two.)
+  <li>Which AWS services can be used to provide network connectivity between an on-premises network and a VPC? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Amazon Route 53</li>
       <li><input type="checkbox" name="question-6" value="B">B. AWS Direct Connect</li>
@@ -15925,7 +15925,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, which of the following are customer responsibilities? (Choose two.)
+  <li>Under the AWS shared responsibility model, which of the following are customer responsibilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-7" value="A">A. Setting up server-side encryption on an Amazon S3 bucket</li>
       <li><input type="checkbox" name="question-7" value="B">B. Amazon RDS instance patching</li>
@@ -16179,7 +16179,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services can be used as infrastructure automation tools? (Choose two.)
+  <li>Which AWS services can be used as infrastructure automation tools? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-22" value="A">A. AWS CloudFormation</li>
       <li><input type="checkbox" name="question-22" value="B">B. Amazon CloudFront</li>
@@ -16246,7 +16246,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What credential components are required to gain programmatic access to an AWS account? (Choose two.)
+  <li>What credential components are required to gain programmatic access to an AWS account? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. An access key ID</li>
       <li><input type="checkbox" name="question-26" value="B">B. A primary key</li>
@@ -16473,7 +16473,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, what are the customer’s responsibilities? (Choose two.)
+  <li>Under the AWS shared responsibility model, what are the customer’s responsibilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. Physical and environmental security</li>
       <li><input type="checkbox" name="question-39" value="B">B. Physical network devices including firewalls</li>
@@ -16596,7 +16596,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>AWS Trusted Advisor provides recommendations on which of the following? (Choose two.)
+  <li>AWS Trusted Advisor provides recommendations on which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-47" value="A">A. Cost optimization</li>
       <li><input type="checkbox" name="question-47" value="B">B. Auditing</li>
@@ -16612,7 +16612,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following tasks can only be performed after signing in with AWS account root user credentials? (Choose two.)
+  <li>Which of the following tasks can only be performed after signing in with AWS account root user credentials? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. Closing an AWS account</li>
       <li><input type="checkbox" name="question-48" value="B">B. Creating a new IAM policy</li>
@@ -16676,7 +16676,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What can be used to reduce the cost of running Amazon EC2 instances? (Choose two.)
+  <li>What can be used to reduce the cost of running Amazon EC2 instances? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Spot Instances for stateless and flexible workloads</li>
       <li><input type="checkbox" name="question-2" value="B">B. Memory optimized instances for high-compute workloads</li>
@@ -16827,7 +16827,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which components are required to build a successful site-to-site VPN connection on AWS? (Choose two.)
+  <li>Which components are required to build a successful site-to-site VPN connection on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Internet gateway</li>
       <li><input type="checkbox" name="question-12" value="B">B. NAT gateway</li>
@@ -16933,7 +16933,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following AWS services are serverless? (Choose two.)
+  <li>Which of the following AWS services are serverless? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. AWS Lambda</li>
       <li><input type="checkbox" name="question-19" value="B">B. Amazon Elasticsearch Service</li>
@@ -16949,7 +16949,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS managed services can be used to extend an on-premises data center to the AWS network? (Choose two.)
+  <li>Which AWS managed services can be used to extend an on-premises data center to the AWS network? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-20" value="A">A. AWS VPN</li>
       <li><input type="checkbox" name="question-20" value="B">B. NAT gateway</li>
@@ -17063,7 +17063,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following assist in identifying costs by department? (Choose two.)
+  <li>Which of the following assist in identifying costs by department? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. Using tags on resources</li>
       <li><input type="checkbox" name="question-27" value="B">B. Using multiple AWS accounts</li>
@@ -17264,7 +17264,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which are benefits of using Amazon RDS over Amazon EC2 when running relational databases on AWS? (Choose two.)
+  <li>Which are benefits of using Amazon RDS over Amazon EC2 when running relational databases on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. Automated backups</li>
       <li><input type="checkbox" name="question-39" value="B">B. Schema management</li>
@@ -17380,7 +17380,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)
+  <li>Which of the following are benefits of using AWS Trusted Advisor? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-46" value="A">A. Providing high-performance container orchestration</li>
       <li><input type="checkbox" name="question-46" value="B">B. Creating and rotating encryption keys</li>
@@ -17398,7 +17398,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A developer has been hired by a large company and needs AWS credentials. <br> Which are security best practices that should be followed? (Choose two.)
+  <li>A developer has been hired by a large company and needs AWS credentials. <br> Which are security best practices that should be followed? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-47" value="A">A. Grant the developer access to only the AWS resources needed to perform the job.</li>
       <li><input type="checkbox" name="question-47" value="B">B. Share the AWS account root user credentials with the developer.</li>
@@ -17466,7 +17466,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which services can be used to deploy applications on AWS? (Choose two.)
+  <li>Which services can be used to deploy applications on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-1" value="A">A. AWS Elastic Beanstalk</li>
       <li><input type="checkbox" name="question-1" value="B">B. AWS Config</li>
@@ -17703,7 +17703,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A web developer is concerned that a DDoS attack could target an application. <br> Which AWS services or features can help protect against such an attack? (Choose two.)
+  <li>A web developer is concerned that a DDoS attack could target an application. <br> Which AWS services or features can help protect against such an attack? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-15" value="A">A. AWS Shield</li>
       <li><input type="checkbox" name="question-15" value="B">B. AWS CloudTrail</li>
@@ -17738,7 +17738,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). <br> Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)
+  <li>A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). <br> Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-17" value="A">A. Create an IAM user and provide AWS Management Console access only.</li>
       <li><input type="checkbox" name="question-17" value="B">B. Create an IAM user and provide programmatic access only.</li>
@@ -17771,7 +17771,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Choose two.)
+  <li>What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Preventing a single point of failure</li>
       <li><input type="checkbox" name="question-19" value="B">B. Reducing the operational costs of the application</li>
@@ -17925,7 +17925,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS services offer compute capabilities? (Choose two.)
+  <li>Which AWS services offer compute capabilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-28" value="A">A. Amazon EC2</li>
       <li><input type="checkbox" name="question-28" value="B">B. Amazon S3</li>
@@ -18011,7 +18011,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>Which AWS Cloud design principles can help increase reliability? (Choose two.)
+  <li>Which AWS Cloud design principles can help increase reliability? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-33" value="A">A. Using monolithic architecture</li>
       <li><input type="checkbox" name="question-33" value="B">B. Measuring overall efficiency</li>
@@ -18029,7 +18029,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)
+  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-34" value="A">A. Application Load Balancer</li>
       <li><input type="checkbox" name="question-34" value="B">B. AWS Global Accelerator</li>
@@ -18149,7 +18149,7 @@ accounts.</li>
 
     </details>
   </li>
-  <li>What are the benefits of consolidated billing for AWS Cloud services? (Choose two.)
+  <li>What are the benefits of consolidated billing for AWS Cloud services? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-41" value="A">A. Volume discounts</li>
       <li><input type="checkbox" name="question-41" value="B">B. A minimal additional fee for use</li>
