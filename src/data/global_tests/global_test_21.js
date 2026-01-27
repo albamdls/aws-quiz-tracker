@@ -39,7 +39,7 @@ export default [
 
     </details>
   </li>
-  <li>Which features and benefits does the AWS Organizations service provide? (Choose two.)
+  <li>Which features and benefits does the AWS Organizations service provide? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Establishing real-time communications between members of an internal team</li>
       <li><input type="checkbox" name="question-2" value="B">B. Facilitating the use of NoSQL databases</li>
@@ -108,7 +108,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services can be used to provide network connectivity between an on-premises network and a VPC? (Choose two.)
+  <li>Which AWS services can be used to provide network connectivity between an on-premises network and a VPC? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Amazon Route 53</li>
       <li><input type="checkbox" name="question-6" value="B">B. AWS Direct Connect</li>
@@ -126,7 +126,7 @@ export default [
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, which of the following are customer responsibilities? (Choose two.)
+  <li>Under the AWS shared responsibility model, which of the following are customer responsibilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-7" value="A">A. Setting up server-side encryption on an Amazon S3 bucket</li>
       <li><input type="checkbox" name="question-7" value="B">B. Amazon RDS instance patching</li>
@@ -380,7 +380,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services can be used as infrastructure automation tools? (Choose two.)
+  <li>Which AWS services can be used as infrastructure automation tools? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-22" value="A">A. AWS CloudFormation</li>
       <li><input type="checkbox" name="question-22" value="B">B. Amazon CloudFront</li>
@@ -447,7 +447,7 @@ export default [
 
     </details>
   </li>
-  <li>What credential components are required to gain programmatic access to an AWS account? (Choose two.)
+  <li>What credential components are required to gain programmatic access to an AWS account? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. An access key ID</li>
       <li><input type="checkbox" name="question-26" value="B">B. A primary key</li>
@@ -674,7 +674,7 @@ export default [
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, what are the customer’s responsibilities? (Choose two.)
+  <li>Under the AWS shared responsibility model, what are the customer’s responsibilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. Physical and environmental security</li>
       <li><input type="checkbox" name="question-39" value="B">B. Physical network devices including firewalls</li>
@@ -797,7 +797,7 @@ export default [
 
     </details>
   </li>
-  <li>AWS Trusted Advisor provides recommendations on which of the following? (Choose two.)
+  <li>AWS Trusted Advisor provides recommendations on which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-47" value="A">A. Cost optimization</li>
       <li><input type="checkbox" name="question-47" value="B">B. Auditing</li>
@@ -813,7 +813,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following tasks can only be performed after signing in with AWS account root user credentials? (Choose two.)
+  <li>Which of the following tasks can only be performed after signing in with AWS account root user credentials? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. Closing an AWS account</li>
       <li><input type="checkbox" name="question-48" value="B">B. Creating a new IAM policy</li>

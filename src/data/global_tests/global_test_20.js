@@ -107,7 +107,7 @@ export default [
 
     </details>
   </li>
-  <li>Which actions represent best practices for using AWS IAM? (Choose two.)
+  <li>Which actions represent best practices for using AWS IAM? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Configure a strong password policy</li>
       <li><input type="checkbox" name="question-6" value="B">B. Share the security credentials among users of AWS accounts who are in the same Region</li>
@@ -166,7 +166,7 @@ export default [
 
     </details>
   </li>
-  <li>According to the AWS Well-Architected Framework, what change management steps should be taken to achieve reliability in the AWS Cloud? (Choose two.)
+  <li>According to the AWS Well-Architected Framework, what change management steps should be taken to achieve reliability in the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-9" value="A">A. Use AWS Config to generate an inventory of AWS resources</li>
       <li><input type="checkbox" name="question-9" value="B">B. Use service limits to prevent users from creating or making changes to AWS resources</li>
@@ -216,7 +216,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services can be used to move data from on-premises data centers to AWS? (Choose two.)
+  <li>Which AWS services can be used to move data from on-premises data centers to AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. AWS Snowball</li>
       <li><input type="checkbox" name="question-12" value="B">B. AWS Lambda</li>
@@ -408,7 +408,7 @@ export default [
 
     </details>
   </li>
-  <li>Which tasks are the customer’s responsibility in the AWS shared responsibility model? (Choose two.)
+  <li>Which tasks are the customer’s responsibility in the AWS shared responsibility model? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-23" value="A">A. Infrastructure facilities access management</li>
       <li><input type="checkbox" name="question-23" value="B">B. Cloud infrastructure hardware lifecycle management</li>
@@ -443,7 +443,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Choose two.)
+  <li>Which AWS service or feature can enhance network security by blocking requests from a particular network for a web application on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-25" value="A">A. AWS WAF</li>
       <li><input type="checkbox" name="question-25" value="B">B. AWS Trusted Advisor</li>
@@ -482,7 +482,7 @@ export default [
 
     </details>
   </li>
-  <li>A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br> Which security measures fall under the responsibility of AWS? (Choose two.)
+  <li>A web application is hosted on AWS using an Elastic Load Balancer, multiple Amazon EC2 instances, and Amazon RDS. <br> Which security measures fall under the responsibility of AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. Running a virus scan on EC2 instances</li>
       <li><input type="checkbox" name="question-27" value="B">B. Protecting against IP spoofing and packet sniffing</li>
@@ -598,7 +598,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services may be scaled using AWS Auto Scaling? (Choose two.)
+  <li>Which AWS services may be scaled using AWS Auto Scaling? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-34" value="A">A. Amazon EC2</li>
       <li><input type="checkbox" name="question-34" value="B">B. Amazon DynamoDB</li>
@@ -616,7 +616,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are benefits of AWS Global Accelerator? (Choose two.)
+  <li>Which of the following are benefits of AWS Global Accelerator? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-35" value="A">A. Reduced cost to run services on AWS</li>
       <li><input type="checkbox" name="question-35" value="B">B. Improved availability of applications deployed on AWS</li>
@@ -707,7 +707,7 @@ export default [
 
     </details>
   </li>
-  <li>The AWS Cost Management tools give users the ability to do which of the following? (Choose two.)
+  <li>The AWS Cost Management tools give users the ability to do which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-40" value="A">A. Terminate all AWS resources automatically if budget thresholds are exceeded.</li>
       <li><input type="checkbox" name="question-40" value="B">B. Break down AWS costs by day, service, and linked AWS account.</li>

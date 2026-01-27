@@ -214,7 +214,7 @@ export default [
 
     </details>
   </li>
-  <li>Which services manage and automate application deployments on AWS? (Choose two.)
+  <li>Which services manage and automate application deployments on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-10" value="A">A. AWS Elastic Beanstalk</li>
       <li><input type="checkbox" name="question-10" value="B">B. AWS CodeCommit</li>
@@ -259,7 +259,7 @@ export default [
 
     </details>
   </li>
-  <li>Which principles are used to architect applications for reliability on the AWS Cloud? (Choose two.)
+  <li>Which principles are used to architect applications for reliability on the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Design for automated failure recovery</li>
       <li><input type="checkbox" name="question-12" value="B">B. Use multiple Availability Zones</li>
@@ -277,7 +277,7 @@ export default [
 
     </details>
   </li>
-  <li>What tasks should a customer perform when that customer suspects an AWS account has been compromised? (Choose two.)
+  <li>What tasks should a customer perform when that customer suspects an AWS account has been compromised? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-13" value="A">A. Rotate passwords and access keys.</li>
       <li><input type="checkbox" name="question-13" value="B">B. Remove MFA tokens.</li>
@@ -383,7 +383,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the advantages of Reserved Instances? (Choose two.)
+  <li>What are the advantages of Reserved Instances? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-18" value="A">A. They provide a discount over on-demand pricing.</li>
       <li><input type="checkbox" name="question-18" value="B">B. They provide access to additional instance types.</li>
@@ -463,7 +463,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following AWS services provide compute resources? (Choose two.)
+  <li>Which of the following AWS services provide compute resources? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-22" value="A">A. AWS Lambda</li>
       <li><input type="checkbox" name="question-22" value="B">B. Amazon Elastic Container Service (Amazon ECS)</li>
@@ -505,7 +505,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Choose two.)
+  <li>Which AWS services provide a way to extend an on-premises architecture to the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-24" value="A">A. Amazon EBS</li>
       <li><input type="checkbox" name="question-24" value="B">B. AWS Direct Connect</li>
@@ -548,7 +548,7 @@ export default [
 
     </details>
   </li>
-  <li>Which services use AWS edge locations? (Choose two.)
+  <li>Which services use AWS edge locations? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. Amazon CloudFront</li>
       <li><input type="checkbox" name="question-26" value="B">B. AWS Shield</li>
@@ -607,7 +607,7 @@ export default [
 
     </details>
   </li>
-  <li>What is the value of using third-party software from AWS Marketplace instead of installing third-party software on Amazon EC2? (Choose two.)
+  <li>What is the value of using third-party software from AWS Marketplace instead of installing third-party software on Amazon EC2? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. Users pay for software by the hour or month depending on licensing.</li>
       <li><input type="checkbox" name="question-29" value="B">B. AWS Marketplace enables the user to launch applications with 1-Click.</li>
@@ -645,7 +645,7 @@ export default [
 
     </details>
   </li>
-  <li>Under the shared responsibility model; which of the following areas are the customer’s responsibility? (Choose two.)
+  <li>Under the shared responsibility model; which of the following areas are the customer’s responsibility? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-31" value="A">A. Firmware upgrades of network infrastructure</li>
       <li><input type="checkbox" name="question-31" value="B">B. Patching of operating systems</li>
@@ -782,7 +782,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are benefits of hosting infrastructure in the AWS Cloud? (Choose two.)
+  <li>Which of the following are benefits of hosting infrastructure in the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. There are no upfront commitments.</li>
       <li><input type="checkbox" name="question-38" value="B">B. AWS manages all security in the cloud.</li>
@@ -891,7 +891,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Choose two.)
+  <li>What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-43" value="A">A. Companies can deploy applications in multiple AWS Regions to reduce latency.</li>
       <li><input type="checkbox" name="question-43" value="B">B. Amazon Translate automatically translates third-party website interfaces into multiple languages.</li>

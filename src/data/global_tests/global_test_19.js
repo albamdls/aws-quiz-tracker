@@ -165,7 +165,7 @@ export default [
 
     </details>
   </li>
-  <li>When designing a typical three-tier web application, which AWS services and/or features improve availability and reduce the impact failures? (Choose two.)
+  <li>When designing a typical three-tier web application, which AWS services and/or features improve availability and reduce the impact failures? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-9" value="A">A. AWS Auto Scaling for Amazon EC2 instances</li>
       <li><input type="checkbox" name="question-9" value="B">B. Amazon VPC subnet ACLs to check the health of a service</li>
@@ -206,7 +206,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are recommended practices for managing IAM users? (Choose two.)
+  <li>Which of the following are recommended practices for managing IAM users? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-11" value="A">A. Require IAM users to change their passwords after a specified period of time</li>
       <li><input type="checkbox" name="question-11" value="B">B. Prevent IAM users from reusing previous passwords</li>
@@ -224,7 +224,7 @@ export default [
 
     </details>
   </li>
-  <li>A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br> How can the company get this support? (Choose two.)
+  <li>A company is migrating from on-premises data centers to the AWS Cloud and is looking for hands-on help with the project. <br> How can the company get this support? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Ask for a quote from the AWS Marketplace team to perform a migration into the company’s AWS account.</li>
       <li><input type="checkbox" name="question-12" value="B">B. Contact AWS Support and open a case for assistance</li>
@@ -343,7 +343,7 @@ export default [
 
     </details>
   </li>
-  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)
+  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Application Load Balancer</li>
       <li><input type="checkbox" name="question-19" value="B">B. AWS Global Accelerator</li>
@@ -378,7 +378,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are components of Amazon VPC? (Choose two.)
+  <li>Which of the following are components of Amazon VPC? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-21" value="A">A. Objects</li>
       <li><input type="checkbox" name="question-21" value="B">B. Subnets</li>
@@ -413,7 +413,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following will enhance the security of access to the AWS Management Console? (Choose two.)
+  <li>Which of the following will enhance the security of access to the AWS Management Console? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-23" value="A">A. AWS Secrets Manager</li>
       <li><input type="checkbox" name="question-23" value="B">B. AWS Certificate Manager</li>
@@ -431,7 +431,7 @@ export default [
 
     </details>
   </li>
-  <li>The AWS Trusted Advisor checks include recommendations regarding which of the following? (Choose two.)
+  <li>The AWS Trusted Advisor checks include recommendations regarding which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-24" value="A">A. Information on Amazon S3 bucket permissions</li>
       <li><input type="checkbox" name="question-24" value="B">B. AWS service outages</li>
@@ -466,7 +466,7 @@ export default [
 
     </details>
   </li>
-  <li>How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Choose two.)
+  <li>How does AWS Trusted Advisor provide guidance to users of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-26" value="A">A. It identifies software vulnerabilities in applications running on AWS</li>
       <li><input type="checkbox" name="question-26" value="B">B. It provides a list of cost optimization recommendations based on current AWS usage</li>
@@ -482,7 +482,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are advantages of the AWS Cloud? (Choose two.)
+  <li>Which of the following are advantages of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. AWS manages the maintenance of the cloud infrastructure</li>
       <li><input type="checkbox" name="question-27" value="B">B. AWS manages the security of applications built on AWS</li>
@@ -518,7 +518,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services provide a user with connectivity between the AWS Cloud and on-premises resources? (Choose two.)
+  <li>Which AWS services provide a user with connectivity between the AWS Cloud and on-premises resources? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. AWS VPN</li>
       <li><input type="checkbox" name="question-29" value="B">B. Amazon Connect</li>
@@ -691,7 +691,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS service will provide a way to generate encryption keys that can be used to encrypt data? (Choose two.)
+  <li>Which AWS service will provide a way to generate encryption keys that can be used to encrypt data? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. Amazon Macie</li>
       <li><input type="checkbox" name="question-38" value="B">B. AWS Certificate Manager</li>
@@ -731,7 +731,7 @@ export default [
 
     </details>
   </li>
-  <li>What can assist in evaluating an application for migration to the cloud? (Choose two.)
+  <li>What can assist in evaluating an application for migration to the cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-40" value="A">A. AWS Trusted Advisor</li>
       <li><input type="checkbox" name="question-40" value="B">B. AWS Professional Services</li>
@@ -772,7 +772,7 @@ export default [
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, the customer manages which of the following? (Choose two.)
+  <li>Under the AWS shared responsibility model, the customer manages which of the following? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-42" value="A">A. Decommissioning of physical storage devices</li>
       <li><input type="checkbox" name="question-42" value="B">B. Security group and ACL configuration</li>
@@ -882,7 +882,7 @@ export default [
 
     </details>
   </li>
-  <li>Which features or services can be used to monitor costs and expenses for an AWS account? (Choose two.)
+  <li>Which features or services can be used to monitor costs and expenses for an AWS account? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. AWS Cost and Usage report</li>
       <li><input type="checkbox" name="question-48" value="B">B. AWS product pages</li>

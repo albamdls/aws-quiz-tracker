@@ -39,7 +39,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are pillars of the AWS Well-Architected Framework? (Choose two.)
+  <li>Which of the following are pillars of the AWS Well-Architected Framework? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Multiple Availability Zones</li>
       <li><input type="checkbox" name="question-2" value="B">B. Performance efficiency</li>
@@ -108,7 +108,7 @@ export default [
 
     </details>
   </li>
-  <li>A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br> What combination of actions will enable the company to accomplish this goal? (Choose two.)
+  <li>A company wants to migrate its applications to a VPC on AWS. These applications will need to access on-premises resources. <br> What combination of actions will enable the company to accomplish this goal? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-6" value="A">A. Use the AWS Service Catalog to identify a list of on-premises resources that can be migrated.</li>
       <li><input type="checkbox" name="question-6" value="B">B. Build a VPN connection between an on-premises device and a virtual private gateway in the new VPC.</li>
@@ -270,7 +270,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the benefits of developing and running a new application in the AWS Cloud compared to on-premises? (Choose two.)
+  <li>What are the benefits of developing and running a new application in the AWS Cloud compared to on-premises? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-14" value="A">A. AWS automatically distributes the data globally for higher durability.</li>
       <li><input type="checkbox" name="question-14" value="B">B. AWS will take care of operating the application.</li>
@@ -375,7 +375,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the immediate benefits of using the AWS Cloud? (Choose two.)
+  <li>What are the immediate benefits of using the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Increased IT staff.</li>
       <li><input type="checkbox" name="question-19" value="B">B. Capital expenses are replaced with variable expenses.</li>
@@ -553,7 +553,7 @@ export default [
 
     </details>
   </li>
-  <li>How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Choose two.)
+  <li>How does AWS charge for AWS Lambda usage once the free tier has been exceeded? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-28" value="A">A. By the time it takes for the Lambda function to execute.</li>
       <li><input type="checkbox" name="question-28" value="B">B. By the number of versions of a specific Lambda function.</li>
@@ -571,7 +571,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following describes the relationships among AWS Regions, Availability Zones, and edge locations? (Choose two.)
+  <li>Which of the following describes the relationships among AWS Regions, Availability Zones, and edge locations? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-29" value="A">A. There are more AWS Regions than Availability Zones.</li>
       <li><input type="checkbox" name="question-29" value="B">B. There are more edge locations than AWS Regions.</li>
@@ -626,7 +626,7 @@ export default [
 
     </details>
   </li>
-  <li>What does AWS Marketplace allow users to do? (Choose two.)
+  <li>What does AWS Marketplace allow users to do? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-32" value="A">A. Sell unused Amazon EC2 Spot Instances.</li>
       <li><input type="checkbox" name="question-32" value="B">B. Sell solutions to other AWS users.</li>
@@ -717,7 +717,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the advantages of the AWS Cloud? (Choose two.)
+  <li>What are the advantages of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-37" value="A">A. Fixed rate monthly cost</li>
       <li><input type="checkbox" name="question-37" value="B">B. No need to guess capacity requirements</li>
@@ -735,7 +735,7 @@ export default [
 
     </details>
   </li>
-  <li>When comparing the total cost of ownership (TCO) of an on-premises infrastructure to a cloud architecture, what costs should be considered? (Choose two.)
+  <li>When comparing the total cost of ownership (TCO) of an on-premises infrastructure to a cloud architecture, what costs should be considered? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. The credit card processing fees for application transactions in the cloud.</li>
       <li><input type="checkbox" name="question-38" value="B">B. The cost of purchasing and installing server hardware in the on-premises data.</li>

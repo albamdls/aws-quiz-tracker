@@ -35,7 +35,7 @@ export default [
 
     </details>
   </li>
-  <li>What can be used to reduce the cost of running Amazon EC2 instances? (Choose two.)
+  <li>What can be used to reduce the cost of running Amazon EC2 instances? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-2" value="A">A. Spot Instances for stateless and flexible workloads</li>
       <li><input type="checkbox" name="question-2" value="B">B. Memory optimized instances for high-compute workloads</li>
@@ -186,7 +186,7 @@ export default [
 
     </details>
   </li>
-  <li>Which components are required to build a successful site-to-site VPN connection on AWS? (Choose two.)
+  <li>Which components are required to build a successful site-to-site VPN connection on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Internet gateway</li>
       <li><input type="checkbox" name="question-12" value="B">B. NAT gateway</li>
@@ -292,7 +292,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following AWS services are serverless? (Choose two.)
+  <li>Which of the following AWS services are serverless? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. AWS Lambda</li>
       <li><input type="checkbox" name="question-19" value="B">B. Amazon Elasticsearch Service</li>
@@ -308,7 +308,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS managed services can be used to extend an on-premises data center to the AWS network? (Choose two.)
+  <li>Which AWS managed services can be used to extend an on-premises data center to the AWS network? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-20" value="A">A. AWS VPN</li>
       <li><input type="checkbox" name="question-20" value="B">B. NAT gateway</li>
@@ -422,7 +422,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following assist in identifying costs by department? (Choose two.)
+  <li>Which of the following assist in identifying costs by department? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-27" value="A">A. Using tags on resources</li>
       <li><input type="checkbox" name="question-27" value="B">B. Using multiple AWS accounts</li>
@@ -623,7 +623,7 @@ export default [
 
     </details>
   </li>
-  <li>Which are benefits of using Amazon RDS over Amazon EC2 when running relational databases on AWS? (Choose two.)
+  <li>Which are benefits of using Amazon RDS over Amazon EC2 when running relational databases on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. Automated backups</li>
       <li><input type="checkbox" name="question-39" value="B">B. Schema management</li>
@@ -739,7 +739,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following are benefits of using AWS Trusted Advisor? (Choose two.)
+  <li>Which of the following are benefits of using AWS Trusted Advisor? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-46" value="A">A. Providing high-performance container orchestration</li>
       <li><input type="checkbox" name="question-46" value="B">B. Creating and rotating encryption keys</li>
@@ -757,7 +757,7 @@ export default [
 
     </details>
   </li>
-  <li>A developer has been hired by a large company and needs AWS credentials. <br> Which are security best practices that should be followed? (Choose two.)
+  <li>A developer has been hired by a large company and needs AWS credentials. <br> Which are security best practices that should be followed? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-47" value="A">A. Grant the developer access to only the AWS resources needed to perform the job.</li>
       <li><input type="checkbox" name="question-47" value="B">B. Share the AWS account root user credentials with the developer.</li>

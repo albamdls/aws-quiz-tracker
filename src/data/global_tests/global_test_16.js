@@ -184,7 +184,7 @@ export default [
 
     </details>
   </li>
-  <li>Which methods can be used to identify AWS costs by departments? (Choose two.)
+  <li>Which methods can be used to identify AWS costs by departments? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-8" value="A">A. Enable multi-factor authentication for the AWS account root user.</li>
       <li><input type="checkbox" name="question-8" value="B">B. Create separate accounts for each department.</li>
@@ -282,7 +282,7 @@ export default [
 
     </details>
   </li>
-  <li>Under the AWS shared responsibility model, customers are responsible for which aspects of security in the cloud? (Choose two.)
+  <li>Under the AWS shared responsibility model, customers are responsible for which aspects of security in the cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-12" value="A">A. Visualization management</li>
       <li><input type="checkbox" name="question-12" value="B">B. Hardware management</li>
@@ -462,7 +462,7 @@ export default [
 
     </details>
   </li>
-  <li>How can a customer increase security to AWS account logons? (Choose two.)
+  <li>How can a customer increase security to AWS account logons? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-20" value="A">A. Configure AWS Certificate Manager</li>
       <li><input type="checkbox" name="question-20" value="B">B. Enable Multi-Factor Authentication (MFA)</li>
@@ -832,7 +832,7 @@ export default [
 
     </details>
   </li>
-  <li>Which of the following BEST describe the AWS pricing model? (Choose two.)
+  <li>Which of the following BEST describe the AWS pricing model? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-37" value="A">A. Fixed-term</li>
       <li><input type="checkbox" name="question-37" value="B">B. Pay-as-you-go</li>
@@ -850,7 +850,7 @@ export default [
 
     </details>
   </li>
-  <li>Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose two.)
+  <li>Which load balancer types are available with Elastic Load Balancing (ELB)? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-38" value="A">A. Public load balancers with AWS Application Auto Scaling capabilities</li>
       <li><input type="checkbox" name="question-38" value="B">B. F5 Big-IP and Citrix NetScaler load balancers</li>
@@ -1071,7 +1071,7 @@ Balancing load balancer or your own web server, when it’s not already in an ed
 
     </details>
   </li>
-  <li>Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose two.)
+  <li>Which of the following services have Distributed Denial of Service (DDoS) mitigation features? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-48" value="A">A. AWS WAF</li>
       <li><input type="checkbox" name="question-48" value="B">B. Amazon DynamoDB</li>

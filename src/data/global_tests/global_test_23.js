@@ -20,7 +20,7 @@ export default [
 
     </details>
   </li>
-  <li>Which services can be used to deploy applications on AWS? (Choose two.)
+  <li>Which services can be used to deploy applications on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-1" value="A">A. AWS Elastic Beanstalk</li>
       <li><input type="checkbox" name="question-1" value="B">B. AWS Config</li>
@@ -257,7 +257,7 @@ export default [
 
     </details>
   </li>
-  <li>A web developer is concerned that a DDoS attack could target an application. <br> Which AWS services or features can help protect against such an attack? (Choose two.)
+  <li>A web developer is concerned that a DDoS attack could target an application. <br> Which AWS services or features can help protect against such an attack? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-15" value="A">A. AWS Shield</li>
       <li><input type="checkbox" name="question-15" value="B">B. AWS CloudTrail</li>
@@ -292,7 +292,7 @@ export default [
 
     </details>
   </li>
-  <li>A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). <br> Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose two.)
+  <li>A company wants to provide one of its employees with access to Amazon RDS. The company also wants to limit the interaction to only the AWS CLI and AWS software development kits (SDKs). <br> Which combination of actions should the company take to meet these requirements while following the principles of least privilege? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-17" value="A">A. Create an IAM user and provide AWS Management Console access only.</li>
       <li><input type="checkbox" name="question-17" value="B">B. Create an IAM user and provide programmatic access only.</li>
@@ -325,7 +325,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Choose two.)
+  <li>What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-19" value="A">A. Preventing a single point of failure</li>
       <li><input type="checkbox" name="question-19" value="B">B. Reducing the operational costs of the application</li>
@@ -479,7 +479,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS services offer compute capabilities? (Choose two.)
+  <li>Which AWS services offer compute capabilities? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-28" value="A">A. Amazon EC2</li>
       <li><input type="checkbox" name="question-28" value="B">B. Amazon S3</li>
@@ -565,7 +565,7 @@ export default [
 
     </details>
   </li>
-  <li>Which AWS Cloud design principles can help increase reliability? (Choose two.)
+  <li>Which AWS Cloud design principles can help increase reliability? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-33" value="A">A. Using monolithic architecture</li>
       <li><input type="checkbox" name="question-33" value="B">B. Measuring overall efficiency</li>
@@ -583,7 +583,7 @@ export default [
 
     </details>
   </li>
-  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose two.)
+  <li>A company is planning to launch an ecommerce site in a single AWS Region to a worldwide user base. <br> Which AWS services will allow the company to reach users and provide low latency and high transfer speeds? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-34" value="A">A. Application Load Balancer</li>
       <li><input type="checkbox" name="question-34" value="B">B. AWS Global Accelerator</li>
@@ -703,7 +703,7 @@ export default [
 
     </details>
   </li>
-  <li>What are the benefits of consolidated billing for AWS Cloud services? (Choose two.)
+  <li>What are the benefits of consolidated billing for AWS Cloud services? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-41" value="A">A. Volume discounts</li>
       <li><input type="checkbox" name="question-41" value="B">B. A minimal additional fee for use</li>

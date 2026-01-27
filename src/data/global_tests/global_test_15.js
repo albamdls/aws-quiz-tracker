@@ -771,7 +771,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which of the following are benefits of the AWS Cloud? (Choose two.)
+  <li>Which of the following are benefits of the AWS Cloud? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-36" value="A">A. Unlimited uptime</li>
       <li><input type="checkbox" name="question-36" value="B">B. Elasticity</li>
@@ -848,7 +848,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which of the following benefits does the AWS Compliance program provide to AWS customers? (Choose two.)
+  <li>Which of the following benefits does the AWS Compliance program provide to AWS customers? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-39" value="A">A. It verifies that hosted workloads are automatically compliant with the controls of supported compliance frameworks.</li>
       <li><input type="checkbox" name="question-39" value="B">B. AWS is responsible for the maintenance of common compliance framework documentation.</li>
@@ -909,7 +909,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>When comparing AWS Cloud with on-premises Total Cost of Ownership, which expenses must be considered? (Choose two.)
+  <li>When comparing AWS Cloud with on-premises Total Cost of Ownership, which expenses must be considered? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-42" value="A">A. Software development</li>
       <li><input type="checkbox" name="question-42" value="B">B. Project management</li>
@@ -927,7 +927,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Under the shared responsibility model, which of the following tasks are the responsibility of the customer? (Choose two.)
+  <li>Under the shared responsibility model, which of the following tasks are the responsibility of the customer? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-43" value="A">A. Maintaining the underlying Amazon EC2 hardware.</li>
       <li><input type="checkbox" name="question-43" value="B">B. Managing the VPC network access control lists.</li>
@@ -953,7 +953,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>Which scenarios represent the concept of elasticity on AWS? (Choose two.)
+  <li>Which scenarios represent the concept of elasticity on AWS? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-44" value="A">A. Scaling the number of Amazon EC2 instances based on traffic.</li>
       <li><input type="checkbox" name="question-44" value="B">B. Resizing Amazon RDS instances as business needs change.</li>
@@ -999,7 +999,7 @@ network path.</li>
 
     </details>
   </li>
-  <li>A company is considering moving its on-premises data center to AWS. What factors should be included in doing a Total Cost of Ownership (TCO) analysis? (Choose two.)
+  <li>A company is considering moving its on-premises data center to AWS. What factors should be included in doing a Total Cost of Ownership (TCO) analysis? (Choose TWO)
     <ul>
       <li><input type="checkbox" name="question-46" value="A">A. Amazon EC2 instance availability</li>
       <li><input type="checkbox" name="question-46" value="B">B. Power consumption of the data center</li>
